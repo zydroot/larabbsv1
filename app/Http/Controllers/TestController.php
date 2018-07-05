@@ -11,6 +11,6 @@ class TestController extends Controller
         echo 'aa';
         $val = getenv('APP_DEBUG');
         $val1 = config('app.timezone');
-        dd($val1);
+        dd(test1());
     }
 }
