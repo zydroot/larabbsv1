@@ -8,9 +8,11 @@ class TestController extends Controller
 {
     //
     public function test(){
-        echo 'aa';
-        $val = getenv('APP_DEBUG');
-        $val1 = config('app.timezone');
-        dd(test1());
+        //echo 'aa';
+
+        /*$val2 = route_class();
+        dd($val2);*/
+        return view('layouts.app');
+
     }
 }
