@@ -15,7 +15,7 @@ class AddAvatorToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-            $table->string('avator')->nullable();
+            $table->string('avatar')->nullable();
             $table->string('introduction')->nullable();
 
         });
