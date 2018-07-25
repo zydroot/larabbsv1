@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class TestController extends Controller
@@ -12,6 +13,8 @@ class TestController extends Controller
 
         /*$val2 = route_class();
         dd($val2);*/
+        $now = Carbon::now()->toDateTimeString();
+        dd($now);
         return view('layouts.app');
 
     }
